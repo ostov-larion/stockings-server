@@ -9,7 +9,7 @@ const server = express()
   .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
   .listen(port, () => console.log(`Listening on ${port}`))
 
-let broker = new ws.Server({port})
+let broker = new ws.Server({server})
 
 console.log(`Broker started on port: ${port}.`)
 
