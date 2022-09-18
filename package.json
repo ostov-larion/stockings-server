@@ -4,6 +4,7 @@
   "description": "Stockings server",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ostov Larion",
