@@ -1,7 +1,7 @@
 let ws = require('ws')
 let express = require('express')
 
-let port = process.env.port || 3000
+let port = process.env.PORT || 3000
 
 const INDEX = '/index.html';
 
