@@ -7,6 +7,9 @@
     "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "ws": "8.8.1"
+  },
   "author": "Ostov Larion",
   "license": "MIT"
 }
