@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "ws": "8.8.1"
+    "ws": "8.8.1",
+    "express": "4.18.1"
   },
   "author": "Ostov Larion",
   "license": "MIT"
