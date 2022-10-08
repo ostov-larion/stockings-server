@@ -21,7 +21,7 @@ broker.on('connection', client => {
     if(client.protocol != 'stockings') {
       client.close(4000, 'Unsupported subprotocol.')
       return false
-    } 
+    }
     client.repo = []
     cons.push(client)
     client.on('message', msg => {
@@ -32,7 +32,7 @@ broker.on('connection', client => {
           client.repo = archives
           return null
         }
-        cons.filter(con => con != client).forEach(con => !con.repo.include(m.split('\n@@@\n')[3]) && con.send(m.toString()))
+        cons.filter(con => con != client).forEach(con => !con.repo.includes(m.split('\n@@@\n')[3]) && con.send(m.toString()))
     })
     client.on('close', () => {
         cons = cons.filter(con => con != client)
